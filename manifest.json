@@ -1,0 +1,47 @@
+{
+    "manifest_version": 3,
+    "name": "dethCodeExtension",
+    "description": "Redirects to Deth Code",
+    "version": "1.1",
+    "icons": {
+        "16": "/images/16x16.png",
+        "48": "/images/48x48.png",
+        "128": "/images/128x128.png"
+    },
+
+    "page_action": {
+        "default_icon": {
+            "16": "/images/16x16-color.png",
+            "48": "/images/48x48-color.png",
+            "128": "/images/128x128-color.png"
+        }
+    },
+
+    // "web_accessible_resources": [
+    //     "images/*.png"
+    // ],
+
+    "content_scripts": [
+        {
+            "matches": ["https://etherscan.io/address/*"],
+            "js": ["etherscan.js"]
+        },
+        {
+            "matches": ["https://snowtrace.io/address/*"],
+            "js": ["snowtrace.js"]   
+        },
+        {
+            "matches": ["https://arbiscan.io/address/*"],
+            "js": ["arbiscan.js"]
+        },
+        {
+            "matches": ["https://optimistic.etherscan.io/address/*"],
+            "js": ["optimistic.js"]   
+        },
+        {
+            "matches": ["https://polygonscan.com/address/*"],
+            "js": ["polygon.js"]
+        }
+    ]
+}
+
