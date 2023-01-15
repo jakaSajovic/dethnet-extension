@@ -1,23 +1,39 @@
-// // window.onload(alert("we did it reddit!"));
+//Gets domain name of the website (ex. 'www.xyz.com')
+let site = location.hostname;
 
-// let url = window.location.toString(); 
-// let newUrl = url.replace(/etherscan.io/, 'etherscan.deth.net');
+//Depending on the 
+function urlReplace(x) {
+    switch (x) {
+        case 'optimistic.etherscan.io':
+            url = 'optimistic.etherscan.deth.net';
+            break;
+        case 'polygonscan.com':
+            url = 'polygonscan.deth.net';
+            break;
+        case 'snowtrace.io':
+            url = 'snowtrace.deth.net';
+            break;
+        case 'arbiscan.io':
+            url = 'arbiscan.deth.net';
+            break;
+        case 'etherscan.io':
+            url = 'etherscan.deth.net';
+            break;
+        default:
+            console.log("something went wrong");
+    }
+    return url;
+}
+urlReplace(site);
 
-// // window.onload(document.querySelector("#ContentPlaceHolder1_copyButtonPanel").after("<img src='/images/16x16.png'>"));
-
-
-// // let icon = document.createElement("a");
-// // icon.setAttribute("src", /images/48x48-color.png);
-
-
-// function addElement() {
-//     const newAnchor = document.createElement("a");
-//     newAnchor.setAttribute("href", newUrl);
-//     const newContent = document.createTextNode("Go to deth.net");
-
-//     newAnchor.appendChild(newContent);
-
-//     document.querySelector("#ContentPlaceHolder1_copyButtonPanel").after(newAnchor);
-// }
-
-// addElement(); 
+//Creates new url which replaces top level domain (.io, .com,...) with (.deth.net); 
+let newUrl = window.location.toString().replace(site, url);
+                        
+//Adds an anchor element with link to deth.net
+function addElement() {
+    const newAnchor = document.createElement("a");
+    newAnchor.setAttribute("href", newUrl);
+    newAnchor.appendChild(document.createTextNode("  deth.net"));
+    document.querySelector("#ContentPlaceHolder1_copyButtonPanel").after(newAnchor);
+}
+addElement(); 
