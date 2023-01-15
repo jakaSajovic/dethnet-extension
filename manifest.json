@@ -9,7 +9,7 @@
         "128": "/images/128x128.png"
     },
 
-    "page_action": {
+    "action": {
         "default_icon": {
             "16": "/images/16x16-color.png",
             "48": "/images/48x48-color.png",
