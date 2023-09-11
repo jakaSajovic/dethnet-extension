@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "dethCodeExtension",
+    "name": "Deth Code Extension",
     "description": "Redirects to Deth Code",
-    "version": "1.2",
+    "version": "2.0",
     "icons": {
         "16": "/images/16x16.png",
         "48": "/images/48x48.png",
@@ -29,5 +29,10 @@
                     ],
             "js": ["init.js"]
         }
-    ]
+    ],
+
+    "web_accessible_resources": [{
+        "resources": ["/images/link-icon.png"],
+        "matches": ["<all_urls>"]
+    }]
 }
