@@ -1,5 +1,8 @@
 # dethnet-extension
-Web extension, that adds link to deth.net
+
+This extension is not affiliated or endorsed by [dethcrypto](https://github.com/dethcrypto)
+
+Easily switch the top-level domain of [Etherscan](https://etherscan.io/), [Optimism](https://optimistic.etherscan.io/), [Arbiscan](https://arbiscan.io/), [Polygonscan](https://polygonscan.com/) and [Snowtrace](https://snowtrace.io/)  from .io/.com to .deth.net with just one click! This extension creates auto-redirect button at the convenient spot, saving time and avoiding the hassle of manual URL editing.
 
 How to install:
 
