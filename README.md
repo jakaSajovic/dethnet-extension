@@ -7,7 +7,8 @@ This extension is not affiliated or endorsed by [dethcrypto](https://github.com/
 
 Easily switch the top-level domain of [Etherscan](https://etherscan.io/), [Optimism](https://optimistic.etherscan.io/), [Arbiscan](https://arbiscan.io/), [Polygonscan](https://polygonscan.com/) and [Snowtrace](https://snowtrace.io/)  from .io/.com to .deth.net with just one click! This extension creates auto-redirect button at the convenient spot, saving time and avoiding the hassle of manual URL editing.
 
-![button-location](https://github.com/jakaSajovic/dethnet-extension/blob/main/button-location.png?raw=true)
+![button-location](https://github.com/jakaSajovic/dethnet-extension/assets/104037623/0bb90e41-78e2-4843-9a24-d20abe0a7be5)
+
 
 ## Installation
 
