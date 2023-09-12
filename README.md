@@ -12,7 +12,7 @@ Easily switch the top-level domain of [Etherscan](https://etherscan.io/), [Optim
 
 ## Installation
 
-1. Enable developer mode in chrome://extensions/ tab
+1. Enable developer mode in [extensions tab](chrome://extensions/)
 2. Select load unpacked
 3. Select dethnet-extension folder!
 
