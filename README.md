@@ -1,4 +1,5 @@
 # dethnet-extension
+for Google Chrome
 
 This extension is not affiliated or endorsed by [dethcrypto](https://github.com/dethcrypto)
 
